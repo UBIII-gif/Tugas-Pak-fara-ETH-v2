@@ -1,0 +1,66 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": false, "internalType": "uint256", "name": "id", "type": "uint256" }
+    ],
+    "name": "SertifikatDicabut",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": false, "internalType": "uint256", "name": "id", "type": "uint256" },
+      { "indexed": false, "internalType": "string", "name": "hashBerkas", "type": "string" },
+      { "indexed": false, "internalType": "string", "name": "namaKegiatan", "type": "string" },
+      { "indexed": false, "internalType": "address", "name": "penerbit", "type": "address" }
+    ],
+    "name": "SertifikatDiterbitkan",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "id", "type": "uint256" }
+    ],
+    "name": "ambilSertifikat",
+    "outputs": [
+      { "internalType": "string", "name": "hashBerkas", "type": "string" },
+      { "internalType": "string", "name": "namaKegiatan", "type": "string" },
+      { "internalType": "string", "name": "namaPenerbit", "type": "string" },
+      { "internalType": "uint256", "name": "waktuTerbit", "type": "uint256" },
+      { "internalType": "address", "name": "alamatPenerbit", "type": "address" },
+      { "internalType": "bool", "name": "valid", "type": "bool" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "id", "type": "uint256" }
+    ],
+    "name": "cabutSertifikat",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "jumlahSertifikat",
+    "outputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "hashBerkas", "type": "string" },
+      { "internalType": "string", "name": "namaKegiatan", "type": "string" },
+      { "internalType": "string", "name": "namaPenerbit", "type": "string" }
+    ],
+    "name": "terbitkanSertifikat",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
